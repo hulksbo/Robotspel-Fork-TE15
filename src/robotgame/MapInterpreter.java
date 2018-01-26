@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import blocks.Block;
+import blocks.Coin;
 import blocks.ExampleBlock;
 import javafx.scene.Group;
 
@@ -43,12 +44,12 @@ public class MapInterpreter extends Group {
 					robotCoords.add(y);
 					break;
 
-				case ' ':
-					b = null;
-					break;
-
 				default:
 					b = null;
+					break;
+				
+				case 'C':
+					b = new Coin(SQUARE_SIZE);;
 					break;
 
 				}

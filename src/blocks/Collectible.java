@@ -5,5 +5,5 @@ package blocks;
  * @author Joakim
  */
 public interface Collectible {
-
+	
 }
